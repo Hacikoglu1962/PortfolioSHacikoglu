@@ -5,9 +5,9 @@
     <img src="/sh_sitzend.jpg" alt="My image">
 </div>
 <div class="hero-text">
-    <h2>Willkommen bei HEARTROCK JEWELS</h2>
+    <h2 class="color-accent">Willkommen bei HEARTROCK JEWELS</h2>
     <h1>Mein Name ist Sarkis Hacikoglu</h1>
-    <h3>Goldschmiedemeister</h3>
+    <h3 class="color-primary">Goldschmiedemeister</h3>
     <p>
     Als Juwelen-Goldschmied habe ich mein Handwerk von der Pike auf erlernt. Mein fundiertes Wissen konnte ich in den Folgejahren in praktisch allen Bereichen der weit gefächerten Goldschmiede- und Produktionstechniken in traditionsreichen Pforzheimer Schmuckbetrieben vertiefen und erweitern.
     Als Modell-Goldschmied zeichnete ich schon früh auch verantwortlich für das Design verschiedener Schmuck-Kollektionen.
@@ -40,18 +40,29 @@
         }
     .hero .hero-text{
         width: 50%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         }
-        .hero-text{
+    .hero-text p{
             margin-top: 1rem;
             border: 1px solid rgb(62, 62, 62);
-            background color(0, 0, 0, 0);
+            background color: (0, 0, 0, 0);
             border-radius: 15px;
             padding: 1rem;
+            max-width: 60ch;
         }
         .hero-text p::before{
-            content:'"' ;
+            content: '“';
         }
         .hero-text p::after{
-            content:'"' ;
+            content: '”';
         }
+        .color-accent {
+            color: var(--color-accent);
+        }
+        .color-primary {
+            color: var(--color-primary);
+        }        
 </style>
