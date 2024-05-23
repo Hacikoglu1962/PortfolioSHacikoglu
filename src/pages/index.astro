@@ -9,11 +9,28 @@ import Progress from '../components/Progress.astro';
  <!-- <h1>Welcome to my Website!</h1> --> 
 <!-- <Card title='Test' body='Inhalt' href='/about'> Card </Card> -->
 
-<section id="hero"></section>
-<Hero />
+<section id="hero">
+  <Hero />
+
+</section>
 <section id="skills">
-  <Progress />
+  <div class="skills-list">
+    <Progress title="HTML" progress="20" color='red' />
+    <Progress title="Grün" progress="30" color="green" />
+    <Progress title="Blau" progress="40" color='blue' />
+    <Progress title="Gelb" progress="50" color="yellow" />
+</div>
 </section>
 <section id="timeline"></section>
 <section id="projects"></section>
 </Layout>
+
+<style>
+  .skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+</style>
