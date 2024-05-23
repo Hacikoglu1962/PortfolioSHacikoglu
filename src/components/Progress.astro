@@ -20,6 +20,7 @@ const { title, progress, color } = Astro.props;
     li.progress {
         display: flex;
         width: 40%;
+        height: 10%;
         flex-direction: column;
         justify-content: center;
     }
@@ -32,14 +33,15 @@ const { title, progress, color } = Astro.props;
 .skill-shadow .skill-bar {
     background-color: var(--color); 
     width: 42%; 
-    padding: 1rem; 
+    padding: 0.2rem; 
     border-radius: 1rem;
     font-style: italic;
     color: #fefefe;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     font-size: 1.1em;
+    
 }
 .skill-bar> span.value::after{
     content: " %";
-}
+    }
 </style>
