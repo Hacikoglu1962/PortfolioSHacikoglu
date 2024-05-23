@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout title="Welcome to Astro.">
     <h1>Hello World!</h1>
 <Card title='Test' body='Inhalt' href='/about'> Card </Card>
+<section id="hero"></section>
+<Hero />
+<section id="skills"></section>
+<section id="timeline"></section>
+<section id="projects"></section>
 </Layout>
